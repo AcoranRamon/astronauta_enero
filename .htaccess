@@ -1,0 +1,8 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^https://www.acoranramon.github.io/astronauta_enero/[nc]
+RewriteRule ^(.*)$ http://www.https://www.acoranramon.github.io/astronauta_enero//$1 [r=301,nc]
+
+//Custom 404 errors
+ErrorDocument 404 /html/404.html
